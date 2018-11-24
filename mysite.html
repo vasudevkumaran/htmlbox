@@ -5,52 +5,128 @@
     <style>
         .container{
             width: 800px;
-            height: 700px;
+            height: 1000px;
             margin: 0 auto;
         }
 
         .headerTag{
-            height: 125px;
-            width: 800px;
+            height: 105px;
+            width: 780px;
             background-color: chocolate;
             float: left;
+            padding: 10px;
         }
 
         .leftTag{
             width: 200px;
-            height: 500px;
+            height: 700px;
             background-color: blueviolet;
             float: left;
         }
 
         .mainTag{
-            width: 450px;
-            height: 500px;
+            width: 430px;
+            height: 680px;
             background-color: antiquewhite;
             float: left;
+            padding: 10px;
         }
 
         .rightTag{
-            width: 150px;
-            height: 500px;
+            width: 130px;
+            height: 680px;
             background-color: aqua;
             float: left;
+            padding: 10px;
         }
 
         .footerTag{
-            height: 75px;
-            width: 800px;
+            height: 55px;
+            width: 780px;
+            padding: 10px;
             background-color: crimson;
             float: left;
         }
+
+        img{
+           float: left; 
+           padding-right: 10px;
+           padding-bottom: 10px;
+        }
+
+        #apptitle{
+            float: right;
+            color: white;
+        }
+
+        ul{
+            list-style: none;
+            display: inline;
+        }
+
+        ul li a{
+            background-color: aquamarine;
+            text-decoration: none;
+            width: 180px;
+            height: 20px;
+            display: block;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        ul li a:hover{
+            background-color: aliceblue;
+        }
+
+        input{
+            display: block;
+            width: 120px;
+            height: 30px;
+            margin: 5px;
+        }
+
+        #copyrights{
+            float: right;
+            color: white;
+        }
+
+        
     </style>
     <body>
         <div class="container">
-                <div class="headerTag">Header</div>
-                <div class="leftTag">left nav</div>
-                <div class="mainTag">main content</div>
-                <div class="rightTag">right nav</div>
-                <div class="footerTag">footer</div>
+                <div class="headerTag">
+                    <img src="cupcakelogo.jpg" alt="Logo" height="100">
+                    <h1 id="apptitle">CupCake</h1>
+                </div>
+                <div class="leftTag">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">What We Do</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mainTag">
+                    <img src="cupcake.jpg" alt="Cupcake"  >
+                        <p>The earliest extant description of what is now often called a cupcake was in 1796, when a recipe for "a light cake to bake in small cups" was written in American Cookery by Amelia Simmons.[1][2] The earliest extant documentation of the term cupcake itself was in "Seventy-five Receipts for Pastry, Cakes, and Sweetmeats" in 1828 in Eliza Leslie's Receipts cookbook.[3][4]</p>
+
+                        <p>In the early 19th century, there were two different uses for the term cup cake or cupcake. In previous centuries, before muffin tins were widely available, the cakes were often baked in individual pottery cups, ramekins, or molds and took their name from the cups they were baked in. This is the use of the name that has remained, and the name of "cupcake" is now given to any small, round cake that is about the size of a teacup. While English fairy cakes vary in size more than American cupcake, they are traditionally smaller and are rarely topped with elaborate icing.</p>
+                        
+                        <p>The other kind of "cup cake" referred to a cake whose ingredients were measured by volume, using a standard-sized cup, instead of being weighed. Recipes whose ingredients were measured using a standard-sized cup could also be baked in cups; however, they were more commonly baked in tins as layers or loaves. In later years, when the use of volume measurements was firmly established in home kitchens, these recipes became known as 1234 cakes or quarter cakes, so called because they are made up of four ingredients: one cup of butter, two cups of sugar, three cups of flour, and four eggs.[5][6] They are plain yellow cakes, somewhat less rich and less expensive than pound cake, due to using about half as much butter and eggs compared to pound cake.</p>
+                       
+                </div>
+                <div class="rightTag">
+                    <h3>Login Here</h3>
+                    <form>
+                        <input type="text" placeholder="Username" >
+                        <input type="password" placeholder="password" >
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+                <div class="footerTag">
+                    <h4 id="copyrights">Cpyrights Project Cupcake 2018-19</h4>
+                </div>
         </div>
         
     </body>
